@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TinTech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="assets/js/backofficeScript.js"></script>
+</head>
+
+<body class="bg-dark text-light">
+    <!-- Inizio Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom" data-bs-theme="dark">
+            <div class=" container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/img/Pink and Purple Gradient Tech Abstract Logo.png" alt="Logo" width="40" style="margin-left: 1em; margin-right: 0.5em;">
+                    <h1><span class="text-danger">Tin</span>TecH</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="backoffice.html">Backoffice</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Inizio main container -->
+    <div class="container-fluid">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h2 class="mb-3 text-center text-danger">Inserisci Prodotto</h1>
+                                <form id="form">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nome Prodotto</label>
+                                        <input class="form-control" id="name" aria-describedby="name input"
+                                            placeholder="Inserisci nome prodotto..." required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label">Descrizione Prodotto</label>
+                                        <textarea class="form-control" id="description" rows="6"
+                                            aria-describedby="name input"
+                                            placeholder="Inserisci descrizione prodotto..." required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="brand" class="form-label">Marca Prodotto</label>
+                                        <select class="form-select" aria-label="Default select" id="brand" required>
+                                            <option value="Apple">Apple</option>
+                                            <option value="Samsung">Samsung</option>
+                                            <option value="Xiaomi">Xiaomi</option>
+                                            <option value="Asus">Asus</option>
+                                            <option value="Motorola">Motorola</option>
+                                            <option value="Honor">Honor</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="imageUrl" class="form-label">URL Immagine Prodotto</label>
+                                        <input class="form-control" id="imageUrl" aria-describedby="name input"
+                                            placeholder="Inserisci URL immagine prodotto..." required />
+                                    </div>
+                                    <div class="mb-5">
+                                        <label for="price" class="form-label">Prezzo prodotto</label>
+                                        <input type="number" class="form-control" id="price" min="0"
+                                            aria-describedby="price input" placeholder="Inserisci prezzo prodotto..."
+                                            required />
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary">ADD PRODUCT</button>
+                                            <button type="reset" class="btn btn-warning">RESET</button>
+                                        </div>
+                                        <button type="button" id="delete" class="btn btn-danger">DELETE</button>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
